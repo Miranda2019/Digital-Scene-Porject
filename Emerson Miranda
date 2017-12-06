@@ -1,0 +1,40 @@
+//Background
+penRGB(44, 86, 153, 1);
+dot(10000);
+
+//All Puffy Clouds
+drawPuffyClouds(30);
+function drawPuffyClouds(size) {
+  penUp();
+  moveTo(0, 312);
+  penColor("white");
+  penWidth(size);
+  penDown();
+  arcRight(90, 25);
+  arcRight(90, 25);
+  for (var i = 0; i < 5; i++) {
+    turnTo(60);
+    arcRight(130, 25);
+  }
+  penUp();
+  moveTo(8, 433);
+  dot(140);
+  moveTo(156, 427);
+  dot(70); 
+}
+
+// 2nd Puffy Cloud
+PuffyCloud(30);
+function PuffyCloud(size) {
+  moveTo(214, 379);
+  penColor("white");
+  penWidth(size);
+  penDown();
+  for (var i = 0; i < 4; i++) {
+    turnTo(30);
+    arcRight(90, 25);
+  }
+  penUp();
+  moveTo(288, 420);
+  dot(80);
+}
